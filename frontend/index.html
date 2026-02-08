@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DIVYA – Official Letter Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>DIVYA – Official Letter Reply Assistant</h1>
+
+<section>
+  <h3>Upload Official Letter</h3>
+  <input type="file" id="letterFile" />
+  <button onclick="uploadLetter()">Upload</button>
+</section>
+
+<section>
+  <h3>Extracted English Letter</h3>
+  <textarea id="extractedText"></textarea>
+</section>
+
+<section>
+  <h3>Speak Reply Reason (Telugu)</h3>
+  <button onclick="startRecording()">🎤 Speak</button>
+  <textarea id="teluguText"></textarea>
+</section>
+
+<section>
+  <h3>Generated Official Reply (English)</h3>
+  <textarea id="finalReply"></textarea>
+</section>
+
+<button onclick="downloadReply()">Download Reply</button>
+
+<script src="app.js"></script>
+</body>
+</html>
